@@ -28,7 +28,6 @@ public class SauceDemoTest {
         System.out.println("Page Title: " + driver.getTitle());
 
         //Username, password ve girilir sonra  login butonuna tıla.
-
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("[id='user-name']")));
         driver.findElement(By.cssSelector("[id='user-name']")).click();
         driver.findElement(By.cssSelector("[id='user-name']")).sendKeys("standard_user");
@@ -38,7 +37,6 @@ public class SauceDemoTest {
         Thread.sleep(1000);
         driver.findElement(By.cssSelector("[id='login-button']")).click();
         Thread.sleep(1000);
-
 
         //Sepete ekle ve sepete git butonuna tıkla.
         driver.findElement(By.cssSelector("[id='add-to-cart-sauce-labs-backpack']")).click();
