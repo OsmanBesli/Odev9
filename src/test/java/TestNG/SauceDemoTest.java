@@ -66,8 +66,6 @@ public class SauceDemoTest {
         //Back to home butonuna tıkla.
         driver.findElement(By.cssSelector("[id='back-to-products']")).click();
         Thread.sleep(1000);
-
-        //driver.quit();
     }
     @AfterClass
     public static void tearDown(){
